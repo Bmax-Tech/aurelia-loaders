@@ -1,6 +1,9 @@
 import {bindable} from 'aurelia-framework';
 
 export class ProgressBar {
+  // progress bar theme | default => 'primary'
+  @bindable public theme: string = 'primary';
+
   // progress bar styleClass | default => null
   @bindable public styleClass: string = '';
 
@@ -21,6 +24,16 @@ export class ProgressBar {
 
   // interval reference
   private intervalRef: any = null;
+  // themes
+  private themes: any = {
+    primary: 'progress-bar-primary',
+    secondary: 'progress-bar-secondary',
+    default: 'progress-bar-default',
+    success: 'progress-bar-success',
+    info: 'progress-bar-info',
+    warning: 'progress-bar-warning',
+    danger: 'progress-bar-danger'
+  };
 
   /**
    * Invoke element life-cycle
@@ -57,6 +70,30 @@ export class ProgressBar {
     this.progress = parseInt(this.progress + '');
     this.step = parseInt(this.step + '');
     this.timerInterval = parseInt(this.timerInterval + '');
+    // theme checker
+    switch (this.theme) {
+      case 'primary':
+        this.theme = this.themes.primary;
+        break;
+      case 'secondary':
+        this.theme = this.themes.secondary;
+        break;
+      case 'success':
+        this.theme = this.themes.success;
+        break;
+      case 'info':
+        this.theme = this.themes.info;
+        break;
+      case 'warning':
+        this.theme = this.themes.warning;
+        break;
+      case 'danger':
+        this.theme = this.themes.danger;
+        break;
+      default:
+        this.theme = this.themes.default;
+        break;
+    }
   }
 
   /**

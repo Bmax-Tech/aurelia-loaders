@@ -12,6 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var aurelia_framework_1 = require("aurelia-framework");
 var ProgressBar = (function () {
     function ProgressBar() {
+        this.theme = 'primary';
         this.styleClass = '';
         this.height = 20;
         this.progress = 0;
@@ -19,6 +20,15 @@ var ProgressBar = (function () {
         this.timer = false;
         this.timerInterval = 2500;
         this.intervalRef = null;
+        this.themes = {
+            primary: 'progress-bar-primary',
+            secondary: 'progress-bar-secondary',
+            default: 'progress-bar-default',
+            success: 'progress-bar-success',
+            info: 'progress-bar-info',
+            warning: 'progress-bar-warning',
+            danger: 'progress-bar-danger'
+        };
     }
     ProgressBar.prototype.created = function () {
         var _this = this;
@@ -44,6 +54,29 @@ var ProgressBar = (function () {
         this.progress = parseInt(this.progress + '');
         this.step = parseInt(this.step + '');
         this.timerInterval = parseInt(this.timerInterval + '');
+        switch (this.theme) {
+            case 'primary':
+                this.theme = this.themes.primary;
+                break;
+            case 'secondary':
+                this.theme = this.themes.secondary;
+                break;
+            case 'success':
+                this.theme = this.themes.success;
+                break;
+            case 'info':
+                this.theme = this.themes.info;
+                break;
+            case 'warning':
+                this.theme = this.themes.warning;
+                break;
+            case 'danger':
+                this.theme = this.themes.danger;
+                break;
+            default:
+                this.theme = this.themes.default;
+                break;
+        }
     };
     ProgressBar.prototype.clearTimer = function () {
         if (this.intervalRef) {
@@ -51,6 +84,10 @@ var ProgressBar = (function () {
             clearInterval(this.intervalRef);
         }
     };
+    __decorate([
+        aurelia_framework_1.bindable,
+        __metadata("design:type", String)
+    ], ProgressBar.prototype, "theme", void 0);
     __decorate([
         aurelia_framework_1.bindable,
         __metadata("design:type", String)

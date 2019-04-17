@@ -1,64 +1,144 @@
-.aurelia-progress-bar-blue {
-  appearance: none;
-  border: none;
-  width: 100%;
-  height: 20px;
-  background-color: whiteSmoke;
-  border-radius: 3px;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, .5) inset;
-  color: royalblue;
+.aurelia-progress-bar-container {
+  /*local scope variables*/
+  --brand-default: #B0BEC5;
+  --brand-primary: #2196F3;
+  --brand-secondary: #323a45;
+  --brand-success: #64DD17;
+  --brand-warning: #FFD600;
+  --brand-info: #29B6F6;
+  --brand-danger: #ef1c1c;
+  --bg-light-gray: #f5f5f5;
+  --border-radius: 10px;
+
+  background-color: var(--bg-light-gray);
+  border-radius: var(--border-radius);
+  box-shadow: none;
+  text-align: center;
+  color: #FFF;
+  text-shadow: 0 0 10px #000;
+}
+
+.progress-xs {
+  height: 5px;
+  margin-top: 5px;
+}
+
+.progress-sm {
+  height: 10px;
+  margin-top: 5px;
+}
+
+.progress-lg {
+  height: 25px;
+}
+
+.vertical {
   position: relative;
-  margin: 0 0 1.5em;
+  width: 20px;
+  height: 200px;
+  display: inline-block;
+  margin-right: 10px;
 }
 
-.aurelia-progress-bar-blue::-webkit-progress-bar {
-  background-color: whiteSmoke;
-  border-radius: 3px;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, .5) inset;
+.progress-xs {
+  width: 5px;
+  margin-top: 5px;
 }
 
-.aurelia-progress-bar-blue::-webkit-progress-value {
-  position: relative;
-  background-size: 35px 20px, 100% 100%, 100% 100%;
-  border-radius: 3px;
-  animation: animate-stripes 5s linear infinite;
+.progress-sm {
+  width: 10px;
+  margin-top: 5px;
 }
 
-@keyframes animate-stripes {
-  100% {
-    background-position: -100px 0;
+.progress-lg {
+  width: 30px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-left > span {
+  margin-left: 10px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-right > span {
+  margin-right: 10px;
+}
+
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
   }
 }
 
-.aurelia-progress-bar-blue span {
-  background-color: royalblue;
-  border-radius: 3px;
-  display: block;
-  text-indent: -9999px;
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
 }
 
-.aurelia-progress-bar-blue::-webkit-progress-value {
-  background-image: -webkit-linear-gradient(135deg,
-    transparent,
-    transparent 33%,
-    rgba(0, 0, 0, .1) 33%,
-    rgba(0, 0, 0, .1) 66%,
-    transparent 66%),
-  -webkit-linear-gradient(top,
-      rgba(255, 255, 255, .25),
-      rgba(0, 0, 0, .2)),
-  -webkit-linear-gradient(left, #09c, #09c);
+.aurelia-progress-bar {
+  background-color: var(--brand-primary);
+  box-shadow: none;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  border-radius: var(--border-radius);
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
+  -o-animation: progress-bar-stripes 2s linear infinite;
+  animation: progress-bar-stripes 2s linear infinite;
 }
 
-.aurelia-progress-bar-blue::-moz-progress-bar {
-  background-image: -moz-linear-gradient(135deg,
-    transparent,
-    transparent 33%,
-    rgba(0, 0, 0, .1) 33%,
-    rgba(0, 0, 0, .1) 66%,
-    transparent 66%),
-  -moz-linear-gradient(top,
-      rgba(255, 255, 255, .25),
-      rgba(0, 0, 0, .2)),
-  -moz-linear-gradient(left, #09c, #09c);
+.aurelia-progress-bar-striped > .aurelia-progress-bar {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%,
+  rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%,
+  rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%,
+  rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-size: 40px 40px;
+}
+
+.progress-bar-primary {
+  background-color: var(--brand-primary);
+}
+
+.progress-bar-secondary {
+  background-color: var(--brand-secondary);
+}
+
+.progress-bar-default {
+  background-color: var(--brand-default);
+}
+
+.progress-bar-success {
+  background-color: var(--brand-success);
+}
+
+.progress-bar-info {
+  background-color: var(--brand-info);
+}
+
+.progress-bar-warning {
+  background-color: var(--brand-warning);
+}
+
+.progress-bar-danger {
+  background-color: var(--brand-danger);
 }

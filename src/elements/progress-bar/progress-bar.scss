@@ -1,4 +1,4 @@
-.bmaxtech-progress-bar {
+.aurelia-progress-bar-blue {
   appearance: none;
   border: none;
   width: 100%;
@@ -11,13 +11,13 @@
   margin: 0 0 1.5em;
 }
 
-.bmaxtech-progress-bar::-webkit-progress-bar {
+.aurelia-progress-bar-blue::-webkit-progress-bar {
   background-color: whiteSmoke;
   border-radius: 3px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, .5) inset;
 }
 
-.bmaxtech-progress-bar::-webkit-progress-value {
+.aurelia-progress-bar-blue::-webkit-progress-value {
   position: relative;
   background-size: 35px 20px, 100% 100%, 100% 100%;
   border-radius: 3px;
@@ -30,14 +30,14 @@
   }
 }
 
-.progress-bar span {
+.aurelia-progress-bar-blue span {
   background-color: royalblue;
   border-radius: 3px;
   display: block;
   text-indent: -9999px;
 }
 
-.bmaxtech-progress-bar::-webkit-progress-value {
+.aurelia-progress-bar-blue::-webkit-progress-value {
   background-image: -webkit-linear-gradient(135deg,
     transparent,
     transparent 33%,
@@ -50,7 +50,7 @@
   -webkit-linear-gradient(left, #09c, #09c);
 }
 
-.bmaxtech-progress-bar::-moz-progress-bar {
+.aurelia-progress-bar-blue::-moz-progress-bar {
   background-image: -moz-linear-gradient(135deg,
     transparent,
     transparent 33%,

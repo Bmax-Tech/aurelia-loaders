@@ -35438,8 +35438,6 @@ define('resources',['resources/index'],function(m){return m;});
 define('resources/elements/progress-bar/progress-bar',['__dot_dot__/src/elements/progress-bar/progress-bar'],function(m){return m;});
 define('text!resources/elements/progress-bar/progress-bar.css',['text!__dot_dot__/src/elements/progress-bar/progress-bar.css'],function(m){return m;});
 define('text!resources/elements/progress-bar/progress-bar.html',['text!__dot_dot__/src/elements/progress-bar/progress-bar.html'],function(m){return m;});
-define('resources/elements/sample-el',['__dot_dot__/src/elements/sample-el'],function(m){return m;});
-define('text!resources/elements/sample-el.html',['text!__dot_dot__/src/elements/sample-el.html'],function(m){return m;});
 define('resources/index',['__dot_dot__/src/index'],function(m){return m;});
 define('text',['text/text'],function(m){return m;});;
 function _aureliaConfigureModuleLoader(){requirejs.config({
@@ -35461,8 +35459,6 @@ function _aureliaConfigureModuleLoader(){requirejs.config({
       "__dot_dot__/src/elements/progress-bar/progress-bar",
       "text!__dot_dot__/src/elements/progress-bar/progress-bar.css",
       "text!__dot_dot__/src/elements/progress-bar/progress-bar.html",
-      "__dot_dot__/src/elements/sample-el",
-      "text!__dot_dot__/src/elements/sample-el.html",
       "__dot_dot__/src/index",
       "app",
       "text!app.html",

@@ -1,1 +1,1 @@
-<template><require from=./progress-bar.scss></require><progress max=100 value=80 class=bmaxtech-progress-bar style="height: ${height}px"><div class=progress-bar><span style=width:80%>80%</span></div></progress></template>
+<template><require from=./progress-bar.css></require><progress max=100 value="${progress}" class=aurelia-progress-bar-blue class.bind="styleClass ? styleClass : ''" style="height: ${height}px"><div class=aurelia-progress-bar><span style="width: ${progress}%">${progress}%</span></div></progress></template>

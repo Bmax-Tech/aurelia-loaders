@@ -2,9 +2,15 @@
   <!--  module imports-->
   <require from="./progress-bar.scss"></require>
   <!--  module content-->
-  <progress max="100" value="80" class="bmaxtech-progress-bar" style="height: ${height}px">
-    <div class="progress-bar">
-      <span style="width: 80%">80%</span>
+  <progress
+    max="100"
+    value="${progress}"
+    class="aurelia-progress-bar-blue"
+    class.bind="styleClass ? styleClass : ''"
+    style="height: ${height}px"
+  >
+    <div class="aurelia-progress-bar">
+      <span style="width: ${progress}%">${progress}%</span>
     </div>
   </progress>
 </template>

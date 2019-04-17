@@ -1,8 +1,9 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "module": "esnext",
-    "skipLibCheck": true,
+    "module": "amd",
+    "declaration": false,
+    "noImplicitAny": false,
     "removeComments": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -18,6 +19,7 @@
   },
   "include": [
     "./src/**/*.ts",
+    "./dev-app/**/*.ts",
     "./test/**/*.ts",
     "./types/**/*.d.ts"
   ],

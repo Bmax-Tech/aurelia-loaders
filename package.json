@@ -1,75 +1,74 @@
 {
   "name": "@bmaxtech/aurelia-loaders",
-  "description": "An Aurelia client application.",
-  "version": "0.1.0",
+  "description": "An Aurelia plugin project.",
+  "version": "0.1.2",
   "repository": {
     "type": "???",
     "url": "???"
   },
-  "license": "MIT",
-  "dependencies": {
-    "aurelia-animator-css": "^1.0.4",
-    "aurelia-bootstrapper": "^2.3.2"
-  },
+  "license": "UNLICENSED",
   "devDependencies": {
-    "@types/jest": "^24.0.9",
-    "@types/lodash": "^4.14.117",
-    "@types/node": "^10.11.6",
-    "@types/webpack": "^4.4.15",
+    "aurelia-bootstrapper": "^2.3.2",
+    "aurelia-animator-css": "^1.0.4",
     "aurelia-cli": "^1.0.0-beta.15",
-    "aurelia-loader-nodejs": "^1.0.1",
-    "aurelia-pal-nodejs": "^1.2.0",
     "aurelia-testing": "^1.0.0",
     "aurelia-tools": "^2.0.0",
-    "aurelia-webpack-plugin": "^3.0.0",
-    "autoprefixer": "^9.4.8",
-    "copy-webpack-plugin": "^5.0.0",
     "core-js": "^3.0.0",
-    "css-loader": "^1.0.0",
-    "cssnano": "^4.1.10",
-    "del": "^3.0.0",
-    "duplicate-package-checker-webpack-plugin": "^3.0.0",
-    "expose-loader": "^0.7.5",
-    "file-loader": "^2.0.0",
     "gulp": "^4.0.0",
+    "minimatch": "^3.0.4",
+    "through2": "^3.0.0",
+    "vinyl-fs": "^3.0.3",
+    "del": "^3.0.0",
+    "requirejs": "^2.3.6",
+    "text": "requirejs/text#latest",
+    "gulp-typescript": "^5.0.0",
+    "gulp-tslint": "^8.1.4",
+    "merge2": "^1.2.3",
+    "tslint": "^5.13.0",
+    "typescript": "^3.1.2",
+    "@types/node": "^10.11.6",
+    "gulp-postcss": "^8.0.0",
+    "autoprefixer": "^9.4.8",
+    "cssnano": "^4.1.10",
+    "postcss-url": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "browser-sync": "^2.26.3",
+    "connect-history-api-fallback": "^1.6.0",
+    "debounce": "^1.2.0",
+    "gulp-plumber": "^1.2.1",
     "gulp-rename": "^1.4.0",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
-    "istanbul-instrumenter-loader": "^3.0.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-watch": "^5.0.1",
     "jest": "^24.1.0",
     "jest-cli": "^24.1.0",
     "jest-transform-stub": "^2.0.0",
-    "json-loader": "^0.5.7",
-    "mini-css-extract-plugin": "^0.4.3",
-    "minimatch": "^3.0.4",
-    "node-sass": "^4.11.0",
-    "opn": "^5.4.0",
-    "postcss-loader": "^3.0.0",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "through2": "^3.0.0",
+    "aurelia-loader-nodejs": "^1.0.1",
+    "aurelia-pal-nodejs": "^1.2.0",
     "ts-jest": "^24.0.0",
-    "ts-loader": "^5.2.1",
-    "ts-node": "^7.0.1",
-    "typescript": "^3.1.2",
-    "url-loader": "^1.1.2",
-    "vinyl-fs": "^3.0.3",
-    "webpack": "^4.27.0",
-    "webpack-bundle-analyzer": "^3.0.4",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.9"
+    "@types/jest": "^24.0.9"
   },
   "scripts": {
-    "build": "au build",
+    "build": "au build-plugin",
     "start": "au run",
+    "prepare": "npm run build",
+    "pretest": "au lint",
+    "preversion": "au test",
     "test": "au test"
   },
   "engines": {
     "node": ">=8.9.0"
   },
+  "main": "dist/commonjs/index.js",
+  "module": "dist/native-modules/index.js",
+  "private": true,
+  "files": [
+    "dist"
+  ],
   "jest": {
     "moduleNameMapper": {
-      "^aurelia-binding$": "<rootDir>/node_modules/aurelia-binding"
+      "^aurelia-binding$": "<rootDir>/node_modules/aurelia-binding",
+      "^.+\\.css$": "<rootDir>/test/mock-css"
     },
     "modulePaths": [
       "<rootDir>/src",
@@ -103,18 +102,5 @@
       "text",
       "html"
     ]
-  },
-  "main": "webpack.config.js",
-  "directories": {
-    "test": "test"
-  },
-  "keywords": [
-    "Aurelia",
-    "Loaders",
-    "Aurelia",
-    "Spinners",
-    "Loading",
-    "Indicators"
-  ],
-  "author": "buwanekab@gmail.com"
+  }
 }

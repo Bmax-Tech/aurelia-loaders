@@ -4,7 +4,14 @@ This is an aurelia compatible plugin for loading indicators.
 
 ## How to use aurelia-loaders
 
-install `@bmaxtech\aurelia-loaders` via `npm` or `yarn`
+install `@bmaxtech/aurelia-loaders` via `npm` or `yarn`
+```shell
+npm i @bmaxtech/aurelia-loaders --save
+```
+or
+```shell
+yarn add @bmaxtech/aurelia-loaders
+```
 
 then register plugin with your application
 ```shell

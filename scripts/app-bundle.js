@@ -286,7 +286,7 @@ define('app',["require", "exports"], function (require, exports) {
     exports.App = App;
 });
 ;
-define('text!app.html',[],function(){return "<template><table width=100%><tr><td><progress-bar progress=0 timer=true timer-interval=50 step=1></progress-bar></td></tr><tr><td height=30px></td></tr><tr><td style=padding-left:50px><spinner type=S14 size=100 color=secondary></spinner></td></tr></table></template>";});;
+define('text!app.html',[],function(){return "<template><table width=100%><tr><td><progress-bar progress=0 timer=true timer-interval=50 step=1></progress-bar></td></tr><tr><td height=30px></td></tr><tr><td style=padding-left:50px><spinner type=S14 size=100 color=info></spinner></td></tr></table></template>";});;
 define('environment',["require", "exports"], function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });

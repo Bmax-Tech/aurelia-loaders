@@ -43,8 +43,10 @@ use `progress-bar` or `spinner` element within your application
 - timer : boolean = auto-incrementer, if this is `true`, the progress bar will be automatically incremented | default = false
 - timer-interval : integer = auto-incrementer interval time in seconds | default = 2500 (2.5s)
 - theme : string = color scheme of the progress bar, value can be `primary`, `secondary`, `success`, `info`, `warning` or `danger`  | default = `primary`
+- on-complete : function = callback function, when auto-incrementer is used, this function will be called when progress gets completed  | default = `undefined`
+- show-value : boolean = show current progress percentage value in progress bar | default = `true`
 ```
-<progress-bar style-class="" height="" progress="" step="" timer="" timer-interval="" theme=""></progress-bar>
+<progress-bar style-class="" height="" progress="" step="" timer="" timer-interval="" theme="" on-complete.bind="" show-value=""></progress-bar>
 ```
 
 ## Usage of `spinner` element
@@ -56,7 +58,7 @@ common options :
 - color : string = spinner color | default : `black`
 
 ```
-<spinner type="" style-class="" size="" color=""></progress-bar>
+<spinner type="" style-class="" size="" color=""></spinner>
 ```
 
 ### More about Spinners

@@ -1,0 +1,110 @@
+/*----- spinner - 14 -----*/
+
+.spinner-14 {
+  width: 56px;
+  height: 56px;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  position: relative;
+}
+
+.spinner-14::before {
+  content: '';
+  border: 4px solid rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 112%;
+  height: 112%;
+  position: absolute;
+  top: -9.6px;
+  left: -9.6px;
+  animation: loader-scale 1s ease-out infinite;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+.spinner-14::after {
+  content: '';
+  border: 4px solid #000000;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  animation: loader-scale 1s ease-out infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes loader-scale {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+/* color themes */
+
+/*before*/
+.spinner-14-default:before {
+  border-color: var(--spinner-default) !important;
+}
+
+.spinner-14-primary:before {
+  border-color: var(--spinner-primary) !important;
+}
+
+.spinner-14-secondary:before {
+  border-color: var(--spinner-secondary) !important;
+}
+
+.spinner-14-success:before {
+  border-color: var(--spinner-success) !important;
+}
+
+.spinner-14-warning:before {
+  border-color: var(--spinner-warning) !important;
+}
+
+.spinner-14-info:before {
+  border-color: var(--spinner-info) !important;
+}
+
+.spinner-14-danger:before {
+  border-color: var(--spinner-danger) !important;
+}
+
+/*after*/
+.spinner-14-default:after {
+  border-color: var(--spinner-light-default) !important;
+}
+
+.spinner-14-primary:after {
+  border-color: var(--spinner-light-primary) !important;
+}
+
+.spinner-14-secondary:after {
+  border-color: var(--spinner-light-secondary) !important;
+}
+
+.spinner-14-success:after {
+  border-color: var(--spinner-light-success) !important;
+}
+
+.spinner-14-warning:after {
+  border-color: var(--spinner-light-warning) !important;
+}
+
+.spinner-14-info:after {
+  border-color: var(--spinner-light-info) !important;
+}
+
+.spinner-14-danger:after {
+  border-color: var(--spinner-light-danger) !important;
+}

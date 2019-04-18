@@ -12,7 +12,7 @@
       class="aurelia-progress-bar"
       class.bind="theme"
     >
-      ${progress}%
+      <template if.bind="showValue">${progress}%</template>
     </div>
   </div>
 </template>

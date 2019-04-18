@@ -1,0 +1,18 @@
+:root {
+  --spinner-default: #B0BEC5;
+  --spinner-primary: #2196F3;
+  --spinner-secondary: #323a45;
+  --spinner-success: #64DD17;
+  --spinner-warning: #FFD600;
+  --spinner-info: #29B6F6;
+  --spinner-danger: #ef1c1c;
+
+  /*lighter colors*/
+  --spinner-light-default: rgba(176, 190, 197, 0.5);
+  --spinner-light-primary: rgba(33, 150, 243, 0.5);
+  --spinner-light-secondary: rgba(50, 58, 69, 0.5);
+  --spinner-light-success: rgba(100, 221, 23, 0.5);
+  --spinner-light-warning: rgba(255, 214, 0, 0.5);
+  --spinner-light-info: rgba(41, 182, 246, 0.5);
+  --spinner-light-danger: rgba(239, 28, 28, 0.5);
+}

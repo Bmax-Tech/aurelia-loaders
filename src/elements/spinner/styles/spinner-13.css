@@ -1,0 +1,50 @@
+/*----- spinner - 13 -----*/
+
+.spinner-13 {
+  display: inline-flex;
+  font-size: 64px;
+  color: #000;
+  width: 1em;
+  height: 1em;
+  position: relative;
+  animation-duration: 2s
+}
+
+.spinner-13:before {
+  top: .05em;
+  right: .05em;
+  bottom: .05em;
+  left: .05em;
+  animation-duration: 3s
+}
+
+.spinner-13:after {
+  top: .135em;
+  right: .135em;
+  bottom: .135em;
+  left: .135em;
+  animation-duration: 1.5s
+}
+
+.spinner-13, .spinner-13:after, .spinner-13:before {
+  border: .0333em solid transparent;
+  border-radius: 50%;
+  border-top-color: currentColor;
+  animation-name: k-swirl;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear
+}
+
+.spinner-13:after, .spinner-13:before {
+  content: "";
+  position: absolute
+}
+
+@keyframes k-swirl {
+  0% {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(1turn)
+  }
+}

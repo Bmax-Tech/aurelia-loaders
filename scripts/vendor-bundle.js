@@ -35438,6 +35438,12 @@ define('resources',['resources/index'],function(m){return m;});
 define('resources/elements/progress-bar/progress-bar',['__dot_dot__/src/elements/progress-bar/progress-bar'],function(m){return m;});
 define('text!resources/elements/progress-bar/progress-bar.css',['text!__dot_dot__/src/elements/progress-bar/progress-bar.css'],function(m){return m;});
 define('text!resources/elements/progress-bar/progress-bar.html',['text!__dot_dot__/src/elements/progress-bar/progress-bar.html'],function(m){return m;});
+define('resources/elements/spinner/spinner',['__dot_dot__/src/elements/spinner/spinner'],function(m){return m;});
+define('text!resources/elements/spinner/spinner.html',['text!__dot_dot__/src/elements/spinner/spinner.html'],function(m){return m;});
+define('text!resources/elements/spinner/styles/spinner-1.css',['text!__dot_dot__/src/elements/spinner/styles/spinner-1.css'],function(m){return m;});
+define('text!resources/elements/spinner/styles/spinner-2.css',['text!__dot_dot__/src/elements/spinner/styles/spinner-2.css'],function(m){return m;});
+define('text!resources/elements/spinner/styles/spinner-3.css',['text!__dot_dot__/src/elements/spinner/styles/spinner-3.css'],function(m){return m;});
+define('text!resources/elements/spinner/styles/spinner-4.css',['text!__dot_dot__/src/elements/spinner/styles/spinner-4.css'],function(m){return m;});
 define('resources/index',['__dot_dot__/src/index'],function(m){return m;});
 define('text',['text/text'],function(m){return m;});;
 function _aureliaConfigureModuleLoader(){requirejs.config({
@@ -35459,6 +35465,12 @@ function _aureliaConfigureModuleLoader(){requirejs.config({
       "__dot_dot__/src/elements/progress-bar/progress-bar",
       "text!__dot_dot__/src/elements/progress-bar/progress-bar.css",
       "text!__dot_dot__/src/elements/progress-bar/progress-bar.html",
+      "__dot_dot__/src/elements/spinner/spinner",
+      "text!__dot_dot__/src/elements/spinner/spinner.html",
+      "text!__dot_dot__/src/elements/spinner/styles/spinner-1.css",
+      "text!__dot_dot__/src/elements/spinner/styles/spinner-2.css",
+      "text!__dot_dot__/src/elements/spinner/styles/spinner-3.css",
+      "text!__dot_dot__/src/elements/spinner/styles/spinner-4.css",
       "__dot_dot__/src/index",
       "app",
       "text!app.html",

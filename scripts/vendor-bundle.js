@@ -35441,9 +35441,19 @@ define('text!resources/elements/progress-bar/progress-bar.html',['text!__dot_dot
 define('resources/elements/spinner/spinner',['__dot_dot__/src/elements/spinner/spinner'],function(m){return m;});
 define('text!resources/elements/spinner/spinner.html',['text!__dot_dot__/src/elements/spinner/spinner.html'],function(m){return m;});
 define('text!resources/elements/spinner/styles/spinner-1.css',['text!__dot_dot__/src/elements/spinner/styles/spinner-1.css'],function(m){return m;});
+define('text!resources/elements/spinner/styles/spinner-10.css',['text!__dot_dot__/src/elements/spinner/styles/spinner-10.css'],function(m){return m;});
+define('text!resources/elements/spinner/styles/spinner-11.css',['text!__dot_dot__/src/elements/spinner/styles/spinner-11.css'],function(m){return m;});
+define('text!resources/elements/spinner/styles/spinner-12.css',['text!__dot_dot__/src/elements/spinner/styles/spinner-12.css'],function(m){return m;});
+define('text!resources/elements/spinner/styles/spinner-13.css',['text!__dot_dot__/src/elements/spinner/styles/spinner-13.css'],function(m){return m;});
+define('text!resources/elements/spinner/styles/spinner-14.css',['text!__dot_dot__/src/elements/spinner/styles/spinner-14.css'],function(m){return m;});
 define('text!resources/elements/spinner/styles/spinner-2.css',['text!__dot_dot__/src/elements/spinner/styles/spinner-2.css'],function(m){return m;});
 define('text!resources/elements/spinner/styles/spinner-3.css',['text!__dot_dot__/src/elements/spinner/styles/spinner-3.css'],function(m){return m;});
 define('text!resources/elements/spinner/styles/spinner-4.css',['text!__dot_dot__/src/elements/spinner/styles/spinner-4.css'],function(m){return m;});
+define('text!resources/elements/spinner/styles/spinner-5.css',['text!__dot_dot__/src/elements/spinner/styles/spinner-5.css'],function(m){return m;});
+define('text!resources/elements/spinner/styles/spinner-6.css',['text!__dot_dot__/src/elements/spinner/styles/spinner-6.css'],function(m){return m;});
+define('text!resources/elements/spinner/styles/spinner-7.css',['text!__dot_dot__/src/elements/spinner/styles/spinner-7.css'],function(m){return m;});
+define('text!resources/elements/spinner/styles/spinner-8.css',['text!__dot_dot__/src/elements/spinner/styles/spinner-8.css'],function(m){return m;});
+define('text!resources/elements/spinner/styles/spinner-9.css',['text!__dot_dot__/src/elements/spinner/styles/spinner-9.css'],function(m){return m;});
 define('resources/index',['__dot_dot__/src/index'],function(m){return m;});
 define('text',['text/text'],function(m){return m;});;
 function _aureliaConfigureModuleLoader(){requirejs.config({
@@ -35468,9 +35478,19 @@ function _aureliaConfigureModuleLoader(){requirejs.config({
       "__dot_dot__/src/elements/spinner/spinner",
       "text!__dot_dot__/src/elements/spinner/spinner.html",
       "text!__dot_dot__/src/elements/spinner/styles/spinner-1.css",
+      "text!__dot_dot__/src/elements/spinner/styles/spinner-10.css",
+      "text!__dot_dot__/src/elements/spinner/styles/spinner-11.css",
+      "text!__dot_dot__/src/elements/spinner/styles/spinner-12.css",
+      "text!__dot_dot__/src/elements/spinner/styles/spinner-13.css",
+      "text!__dot_dot__/src/elements/spinner/styles/spinner-14.css",
       "text!__dot_dot__/src/elements/spinner/styles/spinner-2.css",
       "text!__dot_dot__/src/elements/spinner/styles/spinner-3.css",
       "text!__dot_dot__/src/elements/spinner/styles/spinner-4.css",
+      "text!__dot_dot__/src/elements/spinner/styles/spinner-5.css",
+      "text!__dot_dot__/src/elements/spinner/styles/spinner-6.css",
+      "text!__dot_dot__/src/elements/spinner/styles/spinner-7.css",
+      "text!__dot_dot__/src/elements/spinner/styles/spinner-8.css",
+      "text!__dot_dot__/src/elements/spinner/styles/spinner-9.css",
       "__dot_dot__/src/index",
       "app",
       "text!app.html",

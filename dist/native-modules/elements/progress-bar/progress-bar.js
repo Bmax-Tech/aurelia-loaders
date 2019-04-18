@@ -17,6 +17,8 @@ var ProgressBar = (function () {
         this.step = 10;
         this.timer = false;
         this.timerInterval = 2500;
+        this.onComplete = null;
+        this.showValue = true;
         this.intervalRef = null;
         this.themes = {
             primary: 'progress-bar-primary',
@@ -37,6 +39,9 @@ var ProgressBar = (function () {
                     _this.progress += _this.step;
                 }
                 else {
+                    if (_this.onComplete) {
+                        _this.onComplete();
+                    }
                     _this.clearTimer();
                 }
             }, this.timerInterval);
@@ -52,6 +57,8 @@ var ProgressBar = (function () {
         this.progress = parseInt(this.progress + '');
         this.step = parseInt(this.step + '');
         this.timerInterval = parseInt(this.timerInterval + '');
+        this.showValue = this.showValue + '' == "true";
+        this.timer = this.timer + '' == "true";
         switch (this.theme) {
             case 'primary':
                 this.theme = this.themes.primary;
@@ -110,6 +117,14 @@ var ProgressBar = (function () {
         bindable,
         __metadata("design:type", Number)
     ], ProgressBar.prototype, "timerInterval", void 0);
+    __decorate([
+        bindable,
+        __metadata("design:type", Object)
+    ], ProgressBar.prototype, "onComplete", void 0);
+    __decorate([
+        bindable,
+        __metadata("design:type", Boolean)
+    ], ProgressBar.prototype, "showValue", void 0);
     return ProgressBar;
 }());
 export { ProgressBar };

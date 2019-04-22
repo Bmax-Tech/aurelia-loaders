@@ -30,6 +30,10 @@ use `progress-bar` or `spinner` element within your application
 - ![#ef1c1c](https://placehold.it/15/ef1c1c/000000?text=+) `#ef1c1c` - `danger`
 
 ## Usage of `progress-bar` element
+
+**preview**
+<img alt="spinner-1" src="https://raw.githubusercontent.com/Bmax-Tech/aurelia-loaders/master/images/progress-bar.gif" height="40px">
+
 **basic usage**
 ```
 <progress-bar progress="50"></progress-bar>

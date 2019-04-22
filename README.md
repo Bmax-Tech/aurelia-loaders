@@ -51,7 +51,7 @@ use `progress-bar` or `spinner` element within your application
 - on-complete : function = callback function, when auto-incrementer is used, this function will be called when progress gets completed  | default = `undefined`
 - show-value : boolean = show current progress percentage value in progress bar | default = `true`
 ```
-<progress-bar style-class="" height="" progress="" step="" timer="" timer-interval="" theme="" on-complete.bind="" show-value=""></progress-bar>
+<progress-bar style-class="" height="" progress="" step="" timer="" timer-interval="" theme="" on-complete.call="" show-value=""></progress-bar>
 ```
 
 ## Usage of `spinner` element

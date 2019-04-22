@@ -31,8 +31,9 @@ use `progress-bar` or `spinner` element within your application
 
 ## Usage of `progress-bar` element
 
-**preview**
-<img alt="spinner-1" src="https://raw.githubusercontent.com/Bmax-Tech/aurelia-loaders/master/images/progress-bar.gif" height="40px">
+**preview**  
+
+<img alt="spinner-1" src="https://raw.githubusercontent.com/Bmax-Tech/aurelia-loaders/master/images/progress-bar.gif" height="40px">  
 
 **basic usage**
 ```

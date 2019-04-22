@@ -33,8 +33,10 @@ var ProgressBar = (function () {
         };
     }
     ProgressBar.prototype.created = function () {
-        var _this = this;
         this.dirtyChecker();
+    };
+    ProgressBar.prototype.bind = function () {
+        var _this = this;
         if (this.timer) {
             this.intervalRef = setInterval(function () {
                 if (_this.progress < 100) {
@@ -53,6 +55,9 @@ var ProgressBar = (function () {
         if (this.timer) {
             this.clearTimer();
         }
+    };
+    ProgressBar.prototype.unbind = function () {
+        this.progress = 0;
     };
     ProgressBar.prototype.dirtyChecker = function () {
         this.height = parseInt(this.height + '');

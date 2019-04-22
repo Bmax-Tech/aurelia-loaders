@@ -34,11 +34,17 @@ export class ProgressBar {
   };
 
   /**
-   * Invoke element life-cycle
+   * check initial states of the component
    */
   created() {
     // run dirty checker
     this.dirtyChecker();
+  }
+
+  /**
+   * Handle binding process
+   */
+  bind() {
     // check external timer => TRUE | FALSE
     if (this.timer) {
       this.intervalRef = setInterval(() => {
@@ -62,6 +68,13 @@ export class ProgressBar {
     if (this.timer) {
       this.clearTimer();
     }
+  }
+
+  /**
+   * Handle unbind event to clear states
+   */
+  unbind() {
+    this.progress = 0;
   }
 
   /**

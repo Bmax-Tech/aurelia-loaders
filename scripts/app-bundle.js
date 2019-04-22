@@ -33,8 +33,10 @@ define('__dot_dot__/src/elements/progress-bar/progress-bar',["require", "exports
             };
         }
         ProgressBar.prototype.created = function () {
-            var _this = this;
             this.dirtyChecker();
+        };
+        ProgressBar.prototype.bind = function () {
+            var _this = this;
             if (this.timer) {
                 this.intervalRef = setInterval(function () {
                     if (_this.progress < 100) {
@@ -53,6 +55,9 @@ define('__dot_dot__/src/elements/progress-bar/progress-bar',["require", "exports
             if (this.timer) {
                 this.clearTimer();
             }
+        };
+        ProgressBar.prototype.unbind = function () {
+            this.progress = 0;
         };
         ProgressBar.prototype.dirtyChecker = function () {
             this.height = parseInt(this.height + '');
@@ -281,11 +286,7 @@ define('app',["require", "exports"], function (require, exports) {
             this.startProgress = false;
         }
         App.prototype.start = function () {
-            var _this = this;
-            setTimeout(function () {
-                _this.show = !_this.show;
-                console.log("start");
-            }, 10000);
+            this.show = !this.show;
         };
         App.prototype.clicked = function () {
             alert('A primary button click or a touch');
@@ -295,7 +296,7 @@ define('app',["require", "exports"], function (require, exports) {
     exports.App = App;
 });
 ;
-define('text!app.html',[],function(){return "<template><table width=50%><tr><td height=50px style=\"border:1px solid #000\"><progress-bar if.bind=show progress=0 timer=true timer-interval=50 step=1 show-value=true theme=primary></progress-bar></td></tr><tr><td height=30px></td></tr><tr><td style=padding-left:50px><spinner type=S14 size=100 color=info></spinner></td></tr><tr><td style=padding-left:50px><button click.trigger=start()>start</button></td></tr></table></template>";});;
+define('text!app.html',[],function(){return "<template><table width=50%><tr><td height=50px><progress-bar if.bind=show progress=0 timer=true timer-interval=50 step=1 show-value=true theme=primary></progress-bar></td></tr><tr><td height=30px></td></tr><tr><td style=padding-left:50px><spinner type=S14 size=100 color=info></spinner></td></tr><tr><td style=padding-left:50px><button click.trigger=start()>start</button></td></tr></table></template>";});;
 define('environment',["require", "exports"], function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });

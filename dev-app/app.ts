@@ -3,10 +3,7 @@ export class App {
   public startProgress: boolean = false;
 
   start(){
-    setTimeout(()=>{
-      this.show = !this.show;
-      console.log("start");
-    }, 10000);
+    this.show = !this.show;
   }
 
   clicked() {

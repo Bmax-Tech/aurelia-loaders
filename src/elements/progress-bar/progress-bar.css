@@ -1,12 +1,5 @@
 .aurelia-progress-bar-container {
   /*local scope variables*/
-  --brand-default: #B0BEC5;
-  --brand-primary: #2196F3;
-  --brand-secondary: #323a45;
-  --brand-success: #64DD17;
-  --brand-warning: #FFD600;
-  --brand-info: #29B6F6;
-  --brand-danger: #ef1c1c;
   --bg-light-gray: #f5f5f5;
   --border-radius: 10px;
 
@@ -89,7 +82,7 @@
 }
 
 .aurelia-progress-bar {
-  background-color: var(--brand-primary);
+  background-color: var(--bmx-primary);
   box-shadow: none;
   font-size: 14px;
   display: flex;
@@ -116,29 +109,29 @@
 }
 
 .progress-bar-primary {
-  background-color: var(--brand-primary);
+  background-color: var(--bmx-primary);
 }
 
 .progress-bar-secondary {
-  background-color: var(--brand-secondary);
+  background-color: var(--bmx-secondary);
 }
 
 .progress-bar-default {
-  background-color: var(--brand-default);
+  background-color: var(--bmx-default);
 }
 
 .progress-bar-success {
-  background-color: var(--brand-success);
+  background-color: var(--bmx-success);
 }
 
 .progress-bar-info {
-  background-color: var(--brand-info);
+  background-color: var(--bmx-info);
 }
 
 .progress-bar-warning {
-  background-color: var(--brand-warning);
+  background-color: var(--bmx-warning);
 }
 
 .progress-bar-danger {
-  background-color: var(--brand-danger);
+  background-color: var(--bmx-danger);
 }

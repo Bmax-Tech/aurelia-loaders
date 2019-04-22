@@ -171,30 +171,30 @@
 /* color themes */
 
 .spinner-8-default:before {
-  background-color: var(--spinner-default);
+  background-color: var(--bmx-default);
 }
 
 .spinner-8-primary:before {
-  background-color: var(--spinner-primary);
+  background-color: var(--bmx-primary);
 }
 
 .spinner-8-secondary:before {
-  background-color: var(--spinner-secondary);
+  background-color: var(--bmx-secondary);
 }
 
 .spinner-8-success:before {
-  background-color: var(--spinner-success);
+  background-color: var(--bmx-success);
 }
 
 .spinner-8-warning:before {
-  background-color: var(--spinner-warning);
+  background-color: var(--bmx-warning);
 }
 
 .spinner-8-info:before {
-  background-color: var(--spinner-info);
+  background-color: var(--bmx-info);
 }
 
 .spinner-8-danger:before {
-  background-color: var(--spinner-danger);
+  background-color: var(--bmx-danger);
 }
 

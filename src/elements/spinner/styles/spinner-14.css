@@ -53,58 +53,58 @@
 
 /*before*/
 .spinner-14-default:before {
-  border-color: var(--spinner-default) !important;
+  border-color: var(--bmx-default) !important;
 }
 
 .spinner-14-primary:before {
-  border-color: var(--spinner-primary) !important;
+  border-color: var(--bmx-primary) !important;
 }
 
 .spinner-14-secondary:before {
-  border-color: var(--spinner-secondary) !important;
+  border-color: var(--bmx-secondary) !important;
 }
 
 .spinner-14-success:before {
-  border-color: var(--spinner-success) !important;
+  border-color: var(--bmx-success) !important;
 }
 
 .spinner-14-warning:before {
-  border-color: var(--spinner-warning) !important;
+  border-color: var(--bmx-warning) !important;
 }
 
 .spinner-14-info:before {
-  border-color: var(--spinner-info) !important;
+  border-color: var(--bmx-info) !important;
 }
 
 .spinner-14-danger:before {
-  border-color: var(--spinner-danger) !important;
+  border-color: var(--bmx-danger) !important;
 }
 
 /*after*/
 .spinner-14-default:after {
-  border-color: var(--spinner-light-default) !important;
+  border-color: var(--bmx-light-default) !important;
 }
 
 .spinner-14-primary:after {
-  border-color: var(--spinner-light-primary) !important;
+  border-color: var(--bmx-light-primary) !important;
 }
 
 .spinner-14-secondary:after {
-  border-color: var(--spinner-light-secondary) !important;
+  border-color: var(--bmx-light-secondary) !important;
 }
 
 .spinner-14-success:after {
-  border-color: var(--spinner-light-success) !important;
+  border-color: var(--bmx-light-success) !important;
 }
 
 .spinner-14-warning:after {
-  border-color: var(--spinner-light-warning) !important;
+  border-color: var(--bmx-light-warning) !important;
 }
 
 .spinner-14-info:after {
-  border-color: var(--spinner-light-info) !important;
+  border-color: var(--bmx-light-info) !important;
 }
 
 .spinner-14-danger:after {
-  border-color: var(--spinner-light-danger) !important;
+  border-color: var(--bmx-light-danger) !important;
 }

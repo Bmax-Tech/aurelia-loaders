@@ -1,0 +1,18 @@
+:root {
+  --bmx-default: #B0BEC5;
+  --bmx-primary: #2196F3;
+  --bmx-secondary: #323a45;
+  --bmx-success: #64DD17;
+  --bmx-warning: #FFD600;
+  --bmx-info: #29B6F6;
+  --bmx-danger: #ef1c1c;
+
+  /*lighter colors*/
+  --bmx-light-default: rgba(176, 190, 197, 0.5);
+  --bmx-light-primary: rgba(33, 150, 243, 0.5);
+  --bmx-light-secondary: rgba(50, 58, 69, 0.5);
+  --bmx-light-success: rgba(100, 221, 23, 0.5);
+  --bmx-light-warning: rgba(255, 214, 0, 0.5);
+  --bmx-light-info: rgba(41, 182, 246, 0.5);
+  --bmx-light-danger: rgba(239, 28, 28, 0.5);
+}

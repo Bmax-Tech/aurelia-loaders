@@ -1,8 +1,8 @@
 <template>
-  <table width="100%">
+  <table width="50%">
     <tr>
-      <td>
-        <progress-bar progress="0" timer="true" timer-interval="50" step="1" on-complete.bind="clicked" show-value="false"></progress-bar>
+      <td height="50px">
+        <progress-bar if.bind="show" progress="0" timer="true" timer-interval="50" step="1" show-value="true" theme="primary"></progress-bar>
       </td>
     </tr>
     <tr>
@@ -11,6 +11,11 @@
     <tr>
       <td style="padding-left: 50px">
         <spinner type="S14" size="100" color="info"></spinner>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding-left: 50px">
+        <button click.trigger="start()">start</button>
       </td>
     </tr>
   </table>

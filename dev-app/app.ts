@@ -1,5 +1,13 @@
 export class App {
-  public message: string = 'from Aurelia!';
+  public show: boolean = false;
+  public startProgress: boolean = false;
+
+  start(){
+    setTimeout(()=>{
+      this.show = !this.show;
+      console.log("start");
+    }, 10000);
+  }
 
   clicked() {
     // eslint-disable-next-line no-alert
